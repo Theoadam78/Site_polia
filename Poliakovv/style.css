@@ -1,0 +1,165 @@
+/* Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+/* Header and Navigation */
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e00d22;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: url('images/alcohol-pour-une-soirée.webp') center/cover no-repeat, rgba(0, 0, 0, 0.8); /* Couleur de fond de secours */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6); /* Overlay assombri pour rendre le texte plus lisible */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.red-text {
+    color: #e00d22;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.content small {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Play Button Styling */
+.play-button button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.play-button button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Video Overlay Styles */
+.video-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.video-container {
+    position: relative;
+    width: 560px;
+    max-width: 90%;
+}
+
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Social Media Links */
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links a {
+    margin: 10px 0;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    transition: fill 0.3s ease;
+}
+
+.social-links a:hover svg {
+    fill: #e00d22;
+}
